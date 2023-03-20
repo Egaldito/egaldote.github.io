@@ -1,0 +1,259 @@
+/* Reset de estilos */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	background-color: #f8f8f8;
+	
+}
+
+/* Estilos para el encabezado */
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: static;
+	top: 0;
+	z-index: 999;
+	
+}
+
+/* Estilos para la barra de navegación */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-right: 1rem;
+}
+
+nav a {
+	display: block;
+	padding: 0.5rem;
+	color: #333;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Estilos para el hero */
+.hero {
+	padding: 6rem 2rem;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+
+.hero h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.hero p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.hero .btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: #fff;
+	color: #333;
+	border-radius: 3px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Estilos para las secciones */
+section {
+	padding: 4rem 2rem;
+	text-align: center;
+
+}
+
+section h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+section ul {
+	list-style: none;
+}
+
+section li {
+	margin-bottom: 1rem;
+}
+
+/* Estilos para los bloques de citas */
+blockquote {
+	position: relative;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+blockquote p {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+blockquote cite {
+	display: block;
+	font-style: italic;
+	margin-top: 1rem;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 1rem;
+}
+
+textarea {
+	resize: vertical;
+	height: 150px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.3s ease; /* Esta línea ahora contiene la propiedad completa */
+}
+.contenedor{
+    width: 90%;
+    max-width:900px;
+    margin: auto;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border:1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px  #343759;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #343759;
+}
+
+.tabla>h2{
+    font-size:30px;
+    margin-bottom:35px;
+}
+
+.tabla img{
+    width: 64px;
+    margin-bottom:35px;
+}
+
+.tabla > h3{
+    font-size:30px;
+    margin-bottom: 20px;
+}
+
+.tabla > p{
+    display: block;
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-block;
+    width: 150px;
+    padding:12px;
+    background: #a5f059;
+    text-decoration: none;
+    color: #343759;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover{
+    background: #343759;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 6000px){
+    .tabla{
+        width: 45%;
+        max-width:none;
+        margin-bottom: 80px;
+        flex-grow: initial;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .tabla{
+        width: 45%;
+        padding:30px;
+    }
+    .tabla > h2{
+        margin-top:40px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .tabla{
+        width: 85%;
+        padding: 20px;
+    }
+}
